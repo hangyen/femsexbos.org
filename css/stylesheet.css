@@ -24,41 +24,36 @@
 }
 
 .wrapper {
-	max-width: 960px;
+	max-width: 1040px;
 	margin: 0 auto;
 	}
 
 	
 /*****Header container*****/
 
-#header-main {
-	background: rgb(242,242,232);
-	width: 100%;
-	-webkit-box-shadow: rgb(51, 51, 51) 0px .75px 2px .75px;
-	box-shadow: rbg(51,51,51) 0px .75px 2px .75px;
-	z-index: 10;
-	}
 	
 #header-container  {
 	padding: 20px 0 10px;
 	position: relative;
+	width: 100%;
 	}
 	
 #logo {
 	display: inline-block;
 	float: left;
+	padding: 20px 0;
 	}
 
 #nav_bar {
 	position: absolute;
 	bottom: 10px;
-	padding-bottom: 10px;
+	padding: 20px 0px;
 	right: 10px;
 }
 
 #nav_bar a {
 	padding: 0 0 0 20px;
-	font-size: 1.30em;
+	font-size: 1.5em;
 	font-family: 'Federo', sans-serif;
 	color: rgb(181, 16, 48);
 	text-decoration: none;
@@ -67,42 +62,30 @@
 	color: rgb(128,201,153);
 	}
 
-#quote-main {
-	width: 100%;
-	background: rgb(181, 16,48);
-	}
-	
 #quote-container {
 	height: 600px;
-	border: 1px solid #fff;
+	border: 1px solid #eee;
+	width: 100%;
+	background: #fff;
 }
+
+#mission-statement p {
+	text-align: center;
+	font-size: 2.0em;
+	font-family: 'Quattrocento', sans-serif;
+	line-height: 1.5em;
+	padding: 45px 0;
+	width: 1000px;
+	margin: 0 auto;
+	}
+	
 
 #container-main {
 	background: #fff;
 	width: 100%;
-		-webkit-box-shadow: rgb(51, 51, 51) 0px .75px 2px .75px;
-		box-shadow: rbg(51,51,51) 0px .75px 2px .75px;
-		z-index: 10;
 }
-
-#body-container {
-	/*border: 1px solid #eee; */
-	padding: 40px 20px;
-	width: 100%;
-	max-width: 960px;
-	margin: 0 auto;
-	}
-
-/*.icon-main {
-	width: 100%;
-	border: 1px solid red;
-	max-width: 960px;
-	margin: 0 auto;
-	position: relative;
-	}*/
 	
 .icon-container {
-	/*border: 1px solid red;*/
 	width: 23.75%;
 	text-align: center;
 	display: inline-block;
@@ -111,7 +94,6 @@
 	}
 	
 	.icon-container a {
-		/*border: 1px solid #eee;*/
 		width: 200px;
 		margin: 10px auto;
 		display: block;
@@ -196,50 +178,6 @@
 		margin: 0 1% 20px 0;
 		}
 		
-/*COPY BODY----------------------------*/
-
-.copy-wrapper {
-	width: 100%;
-	max-width: 700px;
-	margin: 0 auto;
-	}
-	
-#mission-copy-main {
-	background: #eee;
-	}
-	
-	#mission-copy-container {
-		background: #eee;
-		border: 1px solid #fff;
-		clear: both;
-		}
-	
-	#mission-copy-container h1, h2 {
-		font-family:'Federo', sans-serif;
-		padding: 70px 30px 20px;
-		font-family: 'Federo', sans-serif;
-		font-size: 3em;
-		color: rgb(181,16,48);
-		}
-	
-	video, figure {
-	height: 400px;
-	width: 700px;
-	border: 1px solid red;
-	margin: 20px 0;
-	}
-	
-	#mission-copy-container p {
-	padding: 10px 0;
-	font-family: 'Quattrocento', serif;
-	text-decoration: bold;
-	line-height: 1.5em;
-	}
-	
-	footer {
-		background: #eee;
-		height: 100px;
-		}
 
 	#footer-container {
 		position: relative;
@@ -253,11 +191,6 @@
 		clear: both;
 		}
 
-	#footer-nav {
-		position: absolute;
-		right: 0px;
-		top: 20px;
-		}
 	
 	#footer-nav a {
 		font-family: 'Federo';
@@ -309,9 +242,6 @@
 		a.twitt:active {background-position: 0 -86px;}
 			
 	#copyright {
-		position: absolute;
-		right: 0px;
-		top: 60px;
 		font-size: .80em;
 		}
 		
