@@ -14,6 +14,13 @@
 	-moz-box-sizing: border-box;
 	}
 
+hr {
+	border: 1px solid #eee;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1040px;
+	}
+	
 .clearfix:after {
 	content: ".";
 	display: block;
@@ -38,170 +45,191 @@
 	width: 100%;
 	}
 	
-#logo {
-	display: inline-block;
-	float: left;
-	padding: 20px 0;
+	#logo {
+		display: inline-block;
+		float: left;
+		padding: 20px 0;
+		border: 1px solid #eee
+		}
+
+	#nav_bar {
+		position: absolute;
+		bottom: 15px;
+		padding: 20px 0px;
+		right: 0px;
+		border: 1px solid #eee
+		}
+
+	#nav_bar a {
+		padding: 0 0 0 20px;
+		font-size: 1.5em;
+		font-family: 'Federo', sans-serif;
+		color: rgb(181, 16, 48);
+		text-decoration: none;
+		}
+	
+	#nav_bar a:hover {
+		color: rgb(128,201,153);
+		}
+
+	#quote-container {
+		height: 600px;
+		border: 1px solid #eee;
+		width: 100%;
+		background: #fff;
 	}
 
-#nav_bar {
-	position: absolute;
-	bottom: 10px;
-	padding: 20px 0px;
-	right: 10px;
-}
-
-#nav_bar a {
-	padding: 0 0 0 20px;
-	font-size: 1.5em;
-	font-family: 'Federo', sans-serif;
-	color: rgb(181, 16, 48);
-	text-decoration: none;
-}
-#nav_bar a:hover {
-	color: rgb(128,201,153);
-	}
-
-#quote-container {
-	height: 600px;
-	border: 1px solid #eee;
-	width: 100%;
-	background: #fff;
-}
-
-#mission-statement p {
+/* ------------BODY -------------*/
+	
+#mission-statement {
 	text-align: center;
-	font-size: 2.0em;
+	font-size: 2em;
 	font-family: 'Quattrocento', sans-serif;
 	line-height: 1.5em;
 	padding: 45px 0;
-	width: 1000px;
+	width: 100%;
+	max-width: 1000px;
 	margin: 0 auto;
+	color: rgb(51,50,50);
 	}
 	
-
+span {
+	color: rgb(181,16,48);
+	font-weight: bold;
+	}
+	
 #container-main {
 	background: #fff;
 	width: 100%;
+	padding: 0 0 40px;
 }
 	
-.icon-container {
-	width: 23.75%;
-	text-align: center;
-	display: inline-block;
-	vertical-align: top;
-	z-index=1;
-	}
-	
-	.icon-container a {
-		width: 200px;
-		margin: 10px auto;
-		display: block;
-		width: 150px;
-		height: 150px;
-		white-space: nowrap;
-		text-indent: 100%;
-		overflow: hidden;
+	.icon-container {
+		width: 24.25%;
+		text-align: center;
+		display: inline-block;
+		vertical-align: top;
+		border: 1px solid #eee;
 		}
 	
-		a.mission{
-			background-position: 0 0;
-			background: url(../images/femsexboston-mission-icon.png) no-repeat;
+		.icon-container a {
+			width: 200px;
+			margin: 10px auto;
+			display: block;
+			width: 150px;
+			height: 150px;
+			white-space: nowrap;
+			text-indent: 100%;
+			overflow: hidden;
 			}
-		a.mission:hover {background-position: 0 -150px;}
-		a.mission:active {background-position: 0 -300px;}
 		
-		a.history {
-			background-position: 0 0;
-			background: url(../images/femsexboston-history-icon2.png) no-repeat;
+			a.mission{
+				background-position: 0 0;
+				background: url(../images/femsexboston-mission-icon.png) no-repeat;
+				}
+			a.mission:hover {background-position: 0 -150px;}
+			a.mission:active {background-position: 0 -300px;}
+			
+			a.workshop {
+				background-position: 0 0;
+				background: url(../images/femsexboston-workshop-icon2.png) no-repeat;
+				}
+			a.workshop:hover {background-position: 0 -150px;}
+			a.workshop:active{background-position: 0 -300px;}
+			
+			a.apply{
+				background-position: 0 0;
+				background: url(../images/femsexboston-apply-icon2.png) no-repeat;
+				}
+			a.apply:hover {background-position: 0 -150px;}
+			a.apply:active{background-position: 0 -300px;}
+			
+			a.contribute {
+				background-position: 0 0;
+				background: url(../images/femsex-boston-donate-icon.png) no-repeat;
+				}
+			a.contribute:hover {background-position: 0 -150px;}
+			a.contribute:active{background-position: 0 -300px;}
+			
+		.icon-container h3 {
+			text-align: center;
+			padding: 10px 0 0;
+			font-size: 1.2em;
+			font-family: 'Federo', sans-serif;
+			text-transform: uppercase;
+			color: rgb(181, 16,48);
 			}
-		a.history:hover {background-position: 0 -150px;}
-		a.history:active{background-position: 0 -300px;}
-		
-		a.workshop {
-			background-position: 0 0;
-			background: url(../images/femsexboston-workshop-icon2.png) no-repeat;
-			}
-		a.workshop:hover {background-position: 0 -150px;}
-		a.workshop:active{background-position: 0 -300px;}
-		
-		a.apply{
-			background-position: 0 0;
-			background: url(../images/femsexboston-apply-icon2.png) no-repeat;
-			}
-		a.apply:hover {background-position: 0 -150px;}
-		a.apply:active{background-position: 0 -300px;}
-		
-.icon-container h5 {
-	text-align: center;
-	padding: 10px 0 0;
-	font-size: 1.15em;
-	font-family: 'Federo', sans-serif;
-	text-transform: uppercase;
-	color: rgb(181, 16,48);
-	}
 
-.icon-container p {
-	padding: 10px 20px 20px;
-	font-family: 'Quattrocento', serif;
-	}
+		.icon-container p {
+			padding: 10px 20px 20px;
+			font-family: 'Quattrocento', serif;
+			}
 
 	/*column */
 	
-	.col4_left {
-		float: left;
-		width: 23.75%;
-		margin: 0 0 20px 1%;
-		}
-	
-	.col4_mid-left {
-		float: left;
-		width: 23.75%;
-		margin: 0 1% 20px 1%;
-		}
-		
-	.col4_right {
-		float: right;
-		width: 23.75%;
-		margin: 0 1% 20px 0;
-		}
-	
-	.col2_left {
-		float: left;
-		width: 49%;
-		margin: 0 1% 20px 1%;
-		}
-		
-	.col2_right {
-		float: right;
-		width: 49%;
-		margin: 0 1% 20px 0;
-		}
-		
+.col4_left {
+	float: left;
+	width: 24.25%;
+	margin: 0 0 20px 0;
+	}
 
-	#footer-container {
+.col4_mid-left {
+	float: left;
+	width: 24.25%;
+	margin: 0 0 20px 1%;
+	}
+	
+.col4_right {
+	float: right;
+	width: 24.25%;
+	margin: 0 0 20px 1%;
+	}
+
+	/*---------FOOTER---------*/
+	
+footer{
 		position: relative;
 		height: auto;
+		vertical-align: bottom;
 		}
 		
 	#footer-logo {
-		display: block;
+		display: inline-block;
 		padding: 20px 0 10px 0;
 		float: left;
 		clear: both;
 		}
-
+	
+	#footer-nav {
+		position: absolute;
+		padding: 35px 0 15px;
+		right: 0px;
+		top: 5px;
+		text-align: right;
+		float: right;
+		}
+	
+	#footer-nav ul {
+		list-style-type: none;
+		padding: 0 0 15px 0;
+		}
+	
+	#footer-nav ul li {
+		display: inline;
+		}
 	
 	#footer-nav a {
 		font-family: 'Federo';
-		font-size: 1.15em;
+		font-size: 1.5em;
 		text-decoration: none;
 		color: rgb(181,16,48);
+		padding: 20px 0 10px .7em;
 		}
 	
 	#footer-nav a:hover {
 		color: rgb(128,201,153);
 		}
+	
 	
 	#social {
 		float:right;
@@ -210,7 +238,7 @@
 		width: 46px;
 		z-index: 5;
 		}
-	
+	/*
 		a.fbook {
 			display: block;
 			width: 46px;
@@ -240,9 +268,14 @@
 		a.twitt {background-position: 0 0}
 		a.twitt:hover {background-position: 0 -43px;}
 		a.twitt:active {background-position: 0 -86px;}
-			
-	#copyright {
-		font-size: .80em;
+	
+	*/
+	
+	#footer-nav p {
+		font-size: .75em;
+		text-align: right;
+		font-family: 'Quattrocento', sans-serif;
+		color: rgb(50, 51,51);
 		}
 		
 	
