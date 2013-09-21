@@ -35,36 +35,41 @@ hr {
 	margin: 0 auto;
 	}
 
-	
+#body-wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+	border: 1px solid #eee;
+	background: #fff;
+	}
 /*****Header container*****/
 
 	
 #header-container  {
-	padding: 20px 0 10px;
+	padding: 10px 0 10px;
 	position: relative;
 	width: 100%;
+	background: rgb(69,38,59);
+	max-width: 1200px; 
 	}
 	
 	#logo {
 		display: inline-block;
 		float: left;
-		padding: 20px 0;
-		border: 1px solid #eee
+		padding: 10px 0 10px 80px;
 		}
 
 	#nav_bar {
 		position: absolute;
-		bottom: 15px;
-		padding: 20px 0px;
+		bottom: 10px;
+		padding: 20px 80px 20px 0;
 		right: 0px;
-		border: 1px solid #eee
 		}
 
 	#nav_bar a {
 		padding: 0 0 0 20px;
-		font-size: 1.5em;
+		font-size: 1.3em;
 		font-family: 'Federo', sans-serif;
-		color: rgb(181, 16, 48);
+		color: rgb(226, 247, 206);
 		text-decoration: none;
 		}
 	
@@ -72,7 +77,7 @@ hr {
 		color: rgb(128,201,153);
 		}
 
-	#quote-container {
+	#video-container {
 		height: 600px;
 		border: 1px solid #eee;
 		width: 100%;
@@ -86,7 +91,7 @@ hr {
 	font-size: 2em;
 	font-family: 'Quattrocento', sans-serif;
 	line-height: 1.5em;
-	padding: 45px 0;
+	padding: 50px 0;
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
@@ -94,14 +99,14 @@ hr {
 	}
 	
 span {
-	color: rgb(181,16,48);
+	color: rgb(69,38,59);
 	font-weight: bold;
 	}
 	
 #container-main {
-	background: #fff;
+	background: #eee;
 	width: 100%;
-	padding: 0 0 40px;
+	padding: 60px 80px 10px;
 }
 	
 	.icon-container {
@@ -109,7 +114,6 @@ span {
 		text-align: center;
 		display: inline-block;
 		vertical-align: top;
-		border: 1px solid #eee;
 		}
 	
 		.icon-container a {
@@ -124,14 +128,14 @@ span {
 			}
 		
 			a.mission{
-				background-position: 0 0;
+				background-position: -150 0;
 				background: url(../images/femsexboston-mission-icon.png) no-repeat;
 				}
 			a.mission:hover {background-position: 0 -150px;}
 			a.mission:active {background-position: 0 -300px;}
 			
 			a.workshop {
-				background-position: 0 0;
+				background-position: 0 -150px;
 				background: url(../images/femsexboston-workshop-icon2.png) no-repeat;
 				}
 			a.workshop:hover {background-position: 0 -150px;}
@@ -157,12 +161,16 @@ span {
 			font-size: 1.2em;
 			font-family: 'Federo', sans-serif;
 			text-transform: uppercase;
-			color: rgb(181, 16,48);
+			color: rgb(69,38,59);
 			}
 
 		.icon-container p {
 			padding: 10px 20px 20px;
 			font-family: 'Quattrocento', serif;
+			line-height: 1.4em;
+			font-size: 1.25em;
+			font-weight: 500;
+			color: rgb(51,50,50);
 			}
 
 	/*column */
@@ -185,24 +193,77 @@ span {
 	margin: 0 0 20px 1%;
 	}
 
-	/*---------FOOTER---------*/
+/* ABOUT -----------------------------------------*/
+#about-intro{
+	font-size: 1em;
+	font-family: 'Federo', sans-serif;
+	padding: 30px 0;
+	background: rgb(226, 247, 206);
+	}
+
+#about-intro h1 {
+	padding: 20px 80px;}
+
+#container-bios {
+	background: #fff;
+}
+
+.fac-icon {
+	position: relative;
+	}
 	
+.fac-icon img {
+	float: left;
+	padding: 20px 0;
+	}
+	
+.text-view {
+	position: absolute;
+	top: 30px;
+	left: 280px;
+	}
+
+	.text-view h2, h3, p {
+	padding: 5px 0;
+	}
+	
+	.col2_left {
+		float: left;
+		width: 
+	}
+	
+	/*---------FOOTER---------*/
+
 footer{
 		position: relative;
-		height: auto;
 		vertical-align: bottom;
+		background: rgb(69,38,59);
+		width: 100%;
+		height: 200px;
+		max-width: 1200px;
+		padding: 30px 0;
 		}
 		
 	#footer-logo {
 		display: inline-block;
-		padding: 20px 0 10px 0;
+		padding: 10px 0 10px 80px;
 		float: left;
 		clear: both;
 		}
-	
+		
+		#footer-logo p  {
+		color: rgb(226, 247, 206);
+		line-height: 1.5em;
+		font-family: 'Quattrocento', sans-serif;
+		padding: 10px 0 0 2px;
+		font-size: .85em;
+		text-align: right;
+		clear: both;
+		}
+			
 	#footer-nav {
 		position: absolute;
-		padding: 35px 0 15px;
+		padding: 25px 80px 15px;
 		right: 0px;
 		top: 5px;
 		text-align: right;
@@ -222,13 +283,16 @@ footer{
 		font-family: 'Federo';
 		font-size: 1.5em;
 		text-decoration: none;
-		color: rgb(181,16,48);
-		padding: 20px 0 10px .7em;
+		color: rgb(226, 247, 206);
+		padding: 20px 10px 10px .7em;
 		}
-	
+		
 	#footer-nav a:hover {
 		color: rgb(128,201,153);
 		}
+		
+	
+	
 	
 	
 	#social {
