@@ -48,7 +48,7 @@ hr {
 	padding: 10px 0 10px;
 	position: relative;
 	width: 100%;
-	background: rgb(69,38,59);
+	background: rgb(51,2,22);
 	max-width: 1200px; 
 	}
 	
@@ -66,8 +66,8 @@ hr {
 		}
 
 	#nav_bar a {
-		padding: 0 0 0 20px;
-		font-size: 1.3em;
+		padding: 0 10px 0 20px;
+		font-size: 1.4em;
 		font-family: 'Federo', sans-serif;
 		color: rgb(226, 247, 206);
 		text-decoration: none;
@@ -128,32 +128,29 @@ span {
 			}
 		
 			a.mission{
-				background-position: -150 0;
+				background-position: 0 0px;
 				background: url(../images/femsexboston-mission-icon.png) no-repeat;
 				}
 			a.mission:hover {background-position: 0 -150px;}
-			a.mission:active {background-position: 0 -300px;}
+
 			
 			a.workshop {
-				background-position: 0 -150px;
+				background-position: 0 0px;
 				background: url(../images/femsexboston-workshop-icon2.png) no-repeat;
 				}
 			a.workshop:hover {background-position: 0 -150px;}
-			a.workshop:active{background-position: 0 -300px;}
 			
 			a.apply{
 				background-position: 0 0;
 				background: url(../images/femsexboston-apply-icon2.png) no-repeat;
 				}
 			a.apply:hover {background-position: 0 -150px;}
-			a.apply:active{background-position: 0 -300px;}
 			
-			a.contribute {
+			a.contribute{
 				background-position: 0 0;
 				background: url(../images/femsex-boston-donate-icon.png) no-repeat;
 				}
 			a.contribute:hover {background-position: 0 -150px;}
-			a.contribute:active{background-position: 0 -300px;}
 			
 		.icon-container h3 {
 			text-align: center;
@@ -208,38 +205,116 @@ span {
 	background: #fff;
 }
 
-.fac-icon {
-	position: relative;
-	}
+	.fac-icon {
+		position: relative;
+		}
+		
+	.fac-icon img {
+		float: left;
+		padding: 20px 0;
+		}
+		
+	.text-view {
+		position: absolute;
+		top: 30px;
+		left: 280px;
+		}
+
+		.text-view h2, h3, p {
+		padding: 5px 0;
+		}
+		
+		.col2_left {
+			float: left;
+			width: 
+		}
+
+	/*---------MISSION PAGE */
+
 	
-.fac-icon img {
-	float: left;
-	padding: 20px 0;
-	}
-	
-.text-view {
-	position: absolute;
-	top: 30px;
-	left: 280px;
+.container-main {
+	background: #eee;
+	width: 100%;
+	padding: 60px 200px 10px;
 	}
 
-	.text-view h2, h3, p {
-	padding: 5px 0;
+	.container-main h1 {
+		font-family: "Federo";
+		font-size: 2.0em;
+		color: rgb(52,2,22);
+	}
+
+	.container-main p {
+		font-family: "Quattrocento";
+		font-size: 1.1em;
+		line-height: 1.6em;
+		padding: 20px 0;
+		color: rgb(51,50,50);
+	}
+
+	.container-main p span {
+		font-size: 1.3em;
+		color: rgb(52,2,22);
+	}
+
+	.container-main p em {
+		color: rgb(48,251,153);
+		font-style: normal;
+	}
+
+	.call-to-action {
+		font-family: "Quattrocento";
+		font-size: 1.3em;
+		color: rgb(51,50,50);
+		padding: 10px 0;
 	}
 	
-	.col2_left {
-		float: left;
-		width: 
+	.call-to-action span {
+		color: rgb(48,251,153);
 	}
-	
+
+
+	#mission-video {
+		border: 1px solid black;
+		margin: 30px 0 50px;
+		width: 100%;
+		height: 400px;
+
+	}
+
+/*---DONATE PAGE----*/
+.container-main h1 {
+	font-size: 2.2em;
+}
+
+.container-main p {
+	text-align: left;
+}
+
+.button {
+
+}
+
+/*---WORKSHOP PAGE ----*/
+.container-main h3 {
+	font-family: 'Quattrocento';
+	font-size: 1.3em;
+	font-weight: bold;
+	font-style: italic;
+	color: rgb(52,2,22);
+}
+
+.container-main a {
+	color: rgb(52,2,22);
+}
 	/*---------FOOTER---------*/
 
 footer{
 		position: relative;
-		background: rgb(69,38,59);
+		background: rgb(52,2,22);
 		width: 100%;
 		max-width: 1200px;
-		padding: 30px 0;
+		padding: 10px 0 20px;
 		z-index=5
 		}
 		
@@ -252,7 +327,7 @@ footer{
 		
 		#footer-logo p  {
 		color: rgb(226, 247, 206);
-		line-height: 1.5em;
+		line-height: 1.4em;
 		font-family: 'Quattrocento', sans-serif;
 		padding: 10px 0 0 2px;
 		font-size: .85em;
@@ -263,7 +338,9 @@ footer{
 	
 	#footer-nav ul {
 		list-style-type: none;
-		padding: 0 0 15px 0;
+		margin: 28px 80px 0 0;
+		padding: 0 0 1px 0;
+		text-align: right;
 		}
 	
 	#footer-nav ul li {
@@ -272,7 +349,7 @@ footer{
 	
 	#footer-nav a {
 		font-family: 'Federo';
-		font-size: 1.5em;
+		font-size: 1.4em;
 		text-decoration: none;
 		color: rgb(226, 247, 206);
 		padding: 20px 10px 10px .7em;
