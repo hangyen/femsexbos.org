@@ -242,13 +242,14 @@ span {
 		font-family: "Federo";
 		font-size: 2.0em;
 		color: rgb(52,2,22);
+
 	}
 
 	.container-main p {
 		font-family: "Quattrocento";
 		font-size: 1.1em;
 		line-height: 1.6em;
-		padding: 20px 0;
+		padding: 15px 0;
 		color: rgb(51,50,50);
 	}
 
@@ -282,18 +283,6 @@ span {
 
 	}
 
-/*---DONATE PAGE----*/
-.container-main h1 {
-	font-size: 2.2em;
-}
-
-.container-main p {
-	text-align: left;
-}
-
-.button {
-
-}
 
 /*---WORKSHOP PAGE ----*/
 .container-main h3 {
@@ -307,6 +296,40 @@ span {
 .container-main a {
 	color: rgb(52,2,22);
 }
+
+/*----CONTACT PAGE ----*/
+
+input, textarea {
+		display: block;
+		width: 100%;
+		padding: 10px;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		box-shadow: 0 3px 5px #ccc;
+		border: 1px solid #ccc;
+		font-family: 'Quattrocento';
+}
+
+input[type="submit"] {
+	margin: 30px 0 50px 0;
+	width: 100px;
+	background-color: rgb(51,2,22);
+	color: white;
+	border-radius: 25px;
+	border: 0px;
+}
+
+input[type="submit"]:hover {
+	background: rgb(48,251,153);
+	color: rgb(51,2,22);
+}
+
+input.verif_box {
+	display: inline-block;
+	width: 80%;
+	margin-right: 5px;
+}
+
 	/*---------FOOTER---------*/
 
 footer{

@@ -35,47 +35,25 @@
 					</div>
 				</div>
 					
-					<div id="video-container">
-					</div>	
+					
 			</header>
-			
-			<div id="mission-statement">
-				Through the <span>femsex workshop</span>, we seek to build safe communities to explore gender and sexuality within the female experience. 
 
-				<!--<a href= "https://docs.google.com/forms/d/1yFUBz-_u8EycakIdjuV8nUEtpA8uouJhuwlU3fP_7sI/viewform">Apply </a> now to be a part of our spring workshop, launching January 27th! -->
-			</div>
-			
-			<!--Navigation icons-->
-			<div id="container-main" class="clearfix">
-			
-				<div class="icon-container col4_left">
-					<a class="mission" href="mission.html"target="_blank" title="mission">Mission</a>
-					<h3>Mission</h3>
-					<p>Learn more about what we do and how we got started.</p>
-					<p>
+			<div class="container-main" class="clearfix">
+				<h1>Contact Us</h1>
+				<p>Have questions? Send us a message.</p>
+					<!--/////////// Contact Form //////////-->
+					<form method="post" action="mailer.php">
+						<input type="text" name="name" placeholder="Name" required>
+						<input type="email" name="email" placeholder="Email" required>
+						<textarea rows="10" name="message" placeholder="Message"></textarea>
+						<input type="text" name="verify" class="verif_box" placeholder="I'm human!" required> 
+						<img class="verif_img" src="verificationimage.php?<?php echo rand(0,9999);?>" alt="verification image">
+						<input type="submit" value="Send">
+					</form>
+				<!--/////////// Ends Contact Form //////////-->
 				</div>
 			
-				<div class="icon-container col4_mid-left">
-					<a class="workshop" href="theworkshop.html" target="_blank" title="the workshop">Workshop</a>
-					<h3>Workshop</h3>
-					<p> A 16-week female gender and sexuality workshop. </p>
-				</div>
-				
-				<div class="icon-container col4_mid-left">
-					<a class="apply" href="https://docs.google.com/forms/d/1yFUBz-_u8EycakIdjuV8nUEtpA8uouJhuwlU3fP_7sI/viewform" title="apply" target="_blank"></a>
-					<h3>Apply</h3>
-					<p> Interested? Apply to be part of our next class.</p>
-				</div>
-				
-				<div class="icon-container col4_right">
-					<a class="contribute" href="contribute.html" title="donate" target="_blank"></a>
-					<h3>Contribute</h3>
-					<p>Find out how you can get involved.</p>
-				</div>
-				
-			</div>
 			
-			<hr>
 			
 			<!--- Footer -->
 			<footer class="clearfix">
@@ -90,12 +68,13 @@
 					
 				<div id="footer-nav" class="clearfix">
 					<ul>
-						<li><a href="http://femsexbos.us4.list-manage.com/subscribe?u=332578af93f8c44bf736bd0ec&id=a8828250af">subscribe</a></li>
+						<li><a href="http://eepurl.com/x75Bj">subscribe</a></li>
 						<li><a href="contact.php">contact us</a></li>
 						<li><a href="about.html">about</a></li>
 					</ul>
 				</div>
 				
+			
 
 				
 				</div>
@@ -107,3 +86,8 @@
 		
 			
 		
+
+
+
+
+
