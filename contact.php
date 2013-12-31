@@ -28,7 +28,6 @@
 							<a href="mission.html">mission</a>
 							<!--<a href="history.html">history</a>-->
 							<a href="theworkshop.html">workshop</a>
-							<a href="events.html">events</a>
 							<a href="https://docs.google.com/forms/d/1yFUBz-_u8EycakIdjuV8nUEtpA8uouJhuwlU3fP_7sI/viewform" target="_blank">apply</a>
 							<a href="contribute.html">contribute</a>
 						</nav>
